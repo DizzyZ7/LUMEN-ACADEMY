@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f3ff57" />
+  <meta name="description" content="LUMEN Academy — project-based education in engineering, product, AI and cybersecurity." />
+  <title>LUMEN Academy — Build what changes you</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="loader" aria-hidden="true">
+    <div class="loader__grid"></div>
+    <div class="loader__word"><span>L</span><span>U</span><span>M</span><span>E</span><span>N</span></div>
+    <div class="loader__bar"><i></i></div>
+    <p>Compiling your next version</p>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span>OPEN</span></div>
+  <div class="page-progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="LUMEN Academy home">
+      <span class="brand__mark">L/</span>
+      <span class="brand__name">LUMEN</span>
+      <small>ACADEMY</small>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#tracks">Tracks</a>
+      <a href="#method">Method</a>
+      <a href="#projects">Projects</a>
+      <a href="#apply">Apply</a>
+    </nav>
+    <div class="header-actions">
+      <span class="cohort-status"><i></i> Autumn cohort open</span>
+      <a class="header-cta magnetic" href="#apply">Start application <b>↗</b></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="menu-panel" aria-hidden="true">
+    <div class="menu-panel__inner">
+      <p class="micro">Learn by shipping real work</p>
+      <nav>
+        <a href="#tracks"><small>01</small><span>Tracks</span></a>
+        <a href="#method"><small>02</small><span>Method</span></a>
+        <a href="#projects"><small>03</small><span>Projects</span></a>
+        <a href="#apply"><small>04</small><span>Apply</span></a>
+      </nav>
+      <div class="menu-meta"><span>Remote · Almaty · Worldwide</span><span>Next cohort · September</span></div>
+    </div>
+  </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__badge">NEW COHORT / 09.26</div>
+      <div class="hero__copy hero__copy--left">
+        <p class="eyebrow">Project-based technology education</p>
+        <p>Not another video library. A studio where you build, test, break and ship with senior mentors.</p>
+      </div>
+      <h1 class="hero__title" aria-label="Build what changes you">
+        <span class="hero__title-line">BUILD</span>
+        <span class="hero__title-line hero__title-line--shift">WHAT</span>
+        <span class="hero__title-line hero__title-line--outline">CHANGES YOU</span>
+      </h1>
+      <div class="hero__stage" data-cursor="PLAY">
+        <div class="code-window">
+          <div class="code-window__top"><span></span><span></span><span></span><b>career.ts</b></div>
+          <pre><code><span class="code-dim">01</span> <span class="code-pink">const</span> nextVersion = {
+<span class="code-dim">02</span>   skills: [<span class="code-lime">"build"</span>, <span class="code-lime">"ship"</span>],
+<span class="code-dim">03</span>   confidence: <span class="code-blue">true</span>,
+<span class="code-dim">04</span>   proof: <span class="code-pink">await</span> realProjects(),
+<span class="code-dim">05</span> };
+<span class="code-dim">06</span>
+<span class="code-dim">07</span> deploy(nextVersion);<span class="terminal-caret"></span></code></pre>
+          <div class="code-window__status"><span>BUILD SUCCESSFUL</span><span>00:43</span></div>
+        </div>
+        <div class="floating-chip floating-chip--one">AI SYSTEMS</div>
+        <div class="floating-chip floating-chip--two">FULLSTACK</div>
+        <div class="floating-chip floating-chip--three">CYBERSECURITY</div>
+        <div class="floating-chip floating-chip--four">PRODUCT</div>
+      </div>
+      <div class="hero__copy hero__copy--right">
+        <strong>14 weeks</strong>
+        <span>from guided foundations<br />to a public demo day</span>
+      </div>
+      <div class="hero__footer">
+        <div><strong>04</strong><span>Learning tracks</span></div>
+        <div><strong>01:6</strong><span>Mentor ratio</span></div>
+        <div><strong>72%</strong><span>Work in live briefs</span></div>
+        <a class="hero__link magnetic" href="#tracks">Choose your track <b>↓</b></a>
+      </div>
+    </section>
+
+    <section class="manifest section-shell">
+      <p class="section-index">01 / The school that behaves like a studio</p>
+      <div class="manifest__grid">
+        <h2>Learn less like a student.<br />Work more like a maker.</h2>
+        <div class="manifest__copy">
+          <p>Every week ends with something visible: an interface, service, model, audit, prototype or decision you can explain.</p>
+          <div class="manifest__tags"><span>Build in public</span><span>Critique weekly</span><span>Ship deliberately</span></div>
+        </div>
+      </div>
+      <div class="manifest__rule"><span></span></div>
+    </section>
+
+    <section class="tracks" id="tracks">
+      <div class="tracks__head section-shell">
+        <p class="section-index">02 / Choose your direction</p>
+        <h2>One academy.<br />Four ways in.</h2>
+        <p>Select a track to see the curriculum, project stack and the role it prepares you for.</p>
+      </div>
+      <div class="track-lab section-shell" data-active="0">
+        <div class="track-tabs" role="tablist" aria-label="Learning tracks">
+          <button class="track-tab is-active" type="button" role="tab" aria-selected="true"><span>01</span><strong>Fullstack engineering</strong><small>Products end to end</small></button>
+          <button class="track-tab" type="button" role="tab" aria-selected="false"><span>02</span><strong>AI systems</strong><small>Models into products</small></button>
+          <button class="track-tab" type="button" role="tab" aria-selected="false"><span>03</span><strong>Cybersecurity</strong><small>Break, defend, explain</small></button>
+          <button class="track-tab" type="button" role="tab" aria-selected="false"><span>04</span><strong>Product design</strong><small>Ideas into interfaces</small></button>
+        </div>
+        <div class="track-output">
+          <div class="track-output__meta"><span class="track-code">TRACK / FS-01</span><span class="track-level">FOUNDATION → ADVANCED</span></div>
+          <h3 class="track-title">Fullstack engineering</h3>
+          <p class="track-copy">Design and ship web products across frontend, backend, data and deployment.</p>
+          <div class="track-stack"><span>TypeScript</span><span>React</span><span>Node</span><span>PostgreSQL</span></div>
+          <div class="curriculum-console">
+            <div class="curriculum-console__top"><span>curriculum.json</span><i>LIVE</i></div>
+            <div class="curriculum-row"><small>W01—03</small><strong class="module-one">Interfaces that explain themselves</strong><b>24h</b></div>
+            <div class="curriculum-row"><small>W04—06</small><strong class="module-two">APIs, data and reliable flows</strong><b>32h</b></div>
+            <div class="curriculum-row"><small>W07—10</small><strong class="module-three">Systems, testing and deployment</strong><b>44h</b></div>
+            <div class="curriculum-row curriculum-row--accent"><small>W11—14</small><strong class="module-four">Capstone product sprint</strong><b>56h</b></div>
+          </div>
+          <div class="track-role"><span>Target role</span><strong class="role-name">Junior / Middle Fullstack Engineer</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="method" id="method">
+      <div class="method__intro section-shell">
+        <p class="section-index">03 / Learning loop</p>
+        <h2>Every skill moves through the same four-state system.</h2>
+      </div>
+      <div class="method__sticky">
+        <div class="method__visual">
+          <div class="loop-core"><span>LOOP</span><b>01</b></div>
+          <div class="loop-ring loop-ring--one"><i></i></div>
+          <div class="loop-ring loop-ring--two"><i></i><i></i></div>
+          <div class="loop-pulse"></div>
+        </div>
+        <div class="method__steps">
+          <article class="method-step is-active" data-step="1"><span>01</span><div><p>UNDERSTAND</p><h3>See the system.</h3><p>Short guided sessions turn a complex topic into a map you can use immediately.</p></div></article>
+          <article class="method-step" data-step="2"><span>02</span><div><p>BUILD</p><h3>Make it real.</h3><p>Apply the idea inside a project before the concept has time to become abstract.</p></div></article>
+          <article class="method-step" data-step="3"><span>03</span><div><p>CRITIQUE</p><h3>Explain every choice.</h3><p>Senior feedback focuses on trade-offs, not cosmetic fixes or copied answers.</p></div></article>
+          <article class="method-step" data-step="4"><span>04</span><div><p>SHIP</p><h3>Put it in the world.</h3><p>Deploy, document, present and turn the work into evidence of capability.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="terminal-section">
+      <div class="terminal-section__head section-shell">
+        <p class="section-index">04 / Try the learning environment</p>
+        <h2>Open a terminal.<br />Choose a challenge.</h2>
+      </div>
+      <div class="terminal-lab section-shell">
+        <div class="terminal-lab__sidebar">
+          <button class="challenge-button is-active" type="button" data-command="audit"><span>01</span><strong>Audit an API</strong><small>Cybersecurity · 12 min</small></button>
+          <button class="challenge-button" type="button" data-command="debug"><span>02</span><strong>Debug a flow</strong><small>Engineering · 10 min</small></button>
+          <button class="challenge-button" type="button" data-command="prompt"><span>03</span><strong>Ground an AI answer</strong><small>AI systems · 14 min</small></button>
+          <button class="challenge-button" type="button" data-command="design"><span>04</span><strong>Fix a conversion leak</strong><small>Product · 9 min</small></button>
+        </div>
+        <div class="terminal-shell">
+          <div class="terminal-shell__top"><span></span><span></span><span></span><b>lumen-lab — zsh</b><em>CONNECTED</em></div>
+          <div class="terminal-output" aria-live="polite">
+            <p><span class="prompt">lumen@academy</span>:<span class="path">~/lab</span>$ <span class="typed-command">run challenge --audit-api</span></p>
+            <p class="terminal-line terminal-line--muted">Loading brief: auth-service-v2...</p>
+            <p class="terminal-line">✓ endpoint map generated</p>
+            <p class="terminal-line">✓ rate-limit behavior detected</p>
+            <p class="terminal-line terminal-line--warning">! token scope may be broader than required</p>
+            <p class="terminal-line terminal-line--success">Challenge ready. Explain the risk and propose a fix.</p>
+            <p><span class="prompt">you</span>:<span class="path">~/lab</span>$ <span class="terminal-caret"></span></p>
+          </div>
+          <div class="terminal-shell__footer"><span>MENTOR ONLINE</span><span class="terminal-score">DIFFICULTY 03/05</span><button class="run-button magnetic" type="button">Run challenge ↗</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="projects__head section-shell">
+        <p class="section-index">05 / Student work</p>
+        <h2>Proof beats promises.</h2>
+        <p>Capstones are designed to be inspected, questioned and used — not hidden inside a course dashboard.</p>
+      </div>
+      <div class="project-rail">
+        <article class="project-card project-card--signal" data-cursor="VIEW">
+          <div class="project-card__art"><div class="signal-grid"></div><div class="signal-node signal-node--one"></div><div class="signal-node signal-node--two"></div><div class="signal-line"></div><span>LIVE SYSTEM MAP</span></div>
+          <div class="project-card__copy"><span>01 / CYBERSECURITY</span><h3>SignalWatch</h3><p>Threat monitoring console that turns raw events into explainable incident paths.</p><div><b>Python</b><b>FastAPI</b><b>React</b></div></div>
+        </article>
+        <article class="project-card project-card--garden" data-cursor="VIEW">
+          <div class="project-card__art"><div class="garden-orbit"></div><div class="garden-core">AI</div><span>KNOWLEDGE GRAPH</span></div>
+          <div class="project-card__copy"><span>02 / AI SYSTEMS</span><h3>Grounded Garden</h3><p>Research assistant that reveals its evidence path instead of hiding uncertainty.</p><div><b>RAG</b><b>Embeddings</b><b>Next.js</b></div></div>
+        </article>
+        <article class="project-card project-card--atlas" data-cursor="VIEW">
+          <div class="project-card__art"><div class="atlas-phone"><i></i><span>14:28</span><strong>Route ready</strong></div><div class="atlas-path"></div><span>MOBILITY PRODUCT</span></div>
+          <div class="project-card__copy"><span>03 / PRODUCT DESIGN</span><h3>Atlas Move</h3><p>Accessible trip-planning experience for people navigating unfamiliar cities.</p><div><b>Research</b><b>Figma</b><b>Prototype</b></div></div>
+        </article>
+        <article class="project-card project-card--stack" data-cursor="VIEW">
+          <div class="project-card__art"><div class="stack-layer">WEB</div><div class="stack-layer">API</div><div class="stack-layer">DATA</div><span>DEPLOYED PRODUCT</span></div>
+          <div class="project-card__copy"><span>04 / FULLSTACK</span><h3>StudioStack</h3><p>Operations platform for independent studios, from brief to invoice and delivery.</p><div><b>TypeScript</b><b>PostgreSQL</b><b>Docker</b></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="career">
+      <div class="career__head section-shell">
+        <p class="section-index">06 / Career simulator</p>
+        <h2>Move the slider.<br />See the evidence grow.</h2>
+      </div>
+      <div class="career-simulator section-shell">
+        <div class="career-scale">
+          <input type="range" min="0" max="3" step="1" value="0" aria-label="Learning stage" />
+          <div class="career-scale__labels"><span>START</span><span>SPRINT 01</span><span>SPRINT 02</span><span>DEMO DAY</span></div>
+        </div>
+        <div class="career-output">
+          <div class="career-output__stage"><span>STAGE 01</span><strong>Learn the system</strong><p>Map the field, understand the tools and complete your first guided build.</p></div>
+          <div class="career-metrics"><div><span>Projects</span><strong class="metric-projects">1</strong></div><div><span>Reviews</span><strong class="metric-reviews">2</strong></div><div><span>Public demos</span><strong class="metric-demos">0</strong></div><div><span>Career assets</span><strong class="metric-assets">1</strong></div></div>
+          <div class="career-proof"><span>Your proof stack</span><div class="proof-items"><i class="is-filled"></i><i></i><i></i><i></i><i></i><i></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="numbers">
+      <div class="numbers__marquee" aria-hidden="true"><div>BUILD / CRITIQUE / SHIP / REPEAT / BUILD / CRITIQUE / SHIP / REPEAT /</div><div>BUILD / CRITIQUE / SHIP / REPEAT / BUILD / CRITIQUE / SHIP / REPEAT /</div></div>
+      <div class="numbers__grid section-shell">
+        <div><strong data-count="38">0</strong><span>senior mentors</span></div>
+        <div><strong data-count="126">0</strong><span>live briefs shipped</span></div>
+        <div><strong data-count="91">0</strong><span>% finish with public work</span></div>
+        <div><strong data-count="14">0</strong><span>weeks per cohort</span></div>
+      </div>
+    </section>
+
+    <section class="apply" id="apply">
+      <div class="apply__copy">
+        <p class="section-index">07 / Join the next cohort</p>
+        <h2>Your next version needs a deadline.</h2>
+        <p>Tell us where you are now and what you want to become able to build.</p>
+        <div class="apply__note"><span>Next start</span><strong>September 21</strong></div>
+      </div>
+      <form class="apply-form">
+        <label><span>Your name</span><input name="name" autocomplete="name" required placeholder="Full name" /></label>
+        <label><span>Email</span><input name="email" type="email" autocomplete="email" required placeholder="you@example.com" /></label>
+        <label><span>Choose a track</span><select name="track" required><option value="">Select direction</option><option>Fullstack engineering</option><option>AI systems</option><option>Cybersecurity</option><option>Product design</option></select></label>
+        <label><span>Current level</span><select name="level" required><option value="">Choose level</option><option>Starting from zero</option><option>Some self-study</option><option>Junior specialist</option><option>Changing specialization</option></select></label>
+        <label class="apply-form__wide"><span>What do you want to build?</span><textarea name="goal" rows="4" placeholder="Tell us about your goal"></textarea></label>
+        <button class="submit-button magnetic" type="submit"><span>Send application</span><b>↗</b></button>
+        <p class="form-note">Applications are reviewed by a human. No automatic enrollment.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top"><a class="brand brand--footer" href="#top"><span class="brand__mark">L/</span><span class="brand__name">LUMEN</span><small>ACADEMY</small></a><p>Technology education for people who want evidence, not certificates alone.</p></div>
+    <div class="footer__word">LUMEN</div>
+    <div class="footer__bottom"><span>© 2026 LUMEN ACADEMY</span><span>Remote · Almaty · Worldwide</span><span>Privacy · Terms</span><a href="#top">Back to top ↑</a></div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.11/dist/lenis.min.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
